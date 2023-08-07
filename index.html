@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFO Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Short+Stack&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#"><img src="./images/vfo-sketch.webp" alt="VFO logo"></a>
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Links
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <img class="welcome fadeIn" src="./images/welcome.svg">
+        <footer class="footer fadeIn">
+            <p>
+                2023 • A VFO Studio creation<br />By <a href="https://github.com/oliveira-victor" target="_blank"><u>Victor Freire Oliveira</u></a>
+            </p>
+        </footer>
+        <div class="container">
+            <div id="scene">
+                <div class="layer" data-depth="0.1">
+                    <img id="layer1" src="./images/layer1.webp">
+                </div>
+                <div class="layer" data-depth="0.7">
+                    <img id="layer2" src="./images/layer2.webp">
+                </div>
+                <div class="layer" data-depth="0.3">
+                    <img id="layer3" src="./images/layer3.webp">
+                </div>
+                <div class="layer" data-depth="0.3">
+                    <img id="layer4" src="./images/layer4.webp">
+                </div>
+                <div class="layer" data-depth="0.2">
+                    <img id="layer5" src="./images/layer5.webp">
+                </div>
+                <div class="layer" data-depth-x="1">
+                    <img id="layer6" src="./images/layer6.webp">
+                </div>
+                <div class="layer" data-depth-x="0.8">
+                    <img id="layer7" src="./images/layer7.webp">
+                </div>
+            </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene, {
+            relativeInput: true
+        });
+    </script>
+</body>
+
+</html>
